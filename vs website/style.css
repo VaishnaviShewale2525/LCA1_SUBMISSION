@@ -1,0 +1,228 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(73, 75, 81, 0.7),rgba(73, 75, 81, 0.7)),url(website\ img.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    padding: 2% 6%;
+    gap: 20px;
+
+    
+}
+nav img{
+    width: 100px;
+    margin-left: -50;
+}
+.nav-links{
+    flex: 1;
+    text-align:center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13 px;   
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+}
+.text-box p {
+    margin: 10px 0px 40px;
+    font-size: 14px;
+}
+.hero-botton {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #ffffff;
+    padding: 18px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-botton:hover{
+    border: 1px solid #624f4d;
+    background:#ffffff;
+    transition: 1s;
+    color: black;
+}
+.popular-products {
+    max-width: 90%;
+    margin: auto;
+    position: relative;
+    padding: 3%;
+}
+
+h2 {
+    font-size: 23px;
+    margin: 20px 0 10px;
+    text-align: center;
+    display: block;
+    animation: pulse 1.5s infinite; /* Applying the animation */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.product-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 15px;
+    padding: 2% 0 20px 0;
+    font-size: 10px;
+}
+.product-slider h3{
+    padding-top: 30;
+}
+.product-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    min-width: 180px;
+    max-width: 200px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.price {
+    font-weight: bold;
+    color: #000000;
+}
+
+.brand {
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+.delivery {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* Scroll buttons */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: -30px;
+}
+
+.next {
+    right: -30px;
+}
+
+.popular-products {
+    max-width: 90%;
+    margin: auto;
+    position: relative;
+    padding: 3%;
+}
+
+h4 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.product-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 15px;
+    padding-bottom: 20px;
+    font-size: 10px;
+    padding: 2%;
+    
+
+}
+.product-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    min-width: 180px;
+    max-width: 200px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
